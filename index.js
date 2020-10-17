@@ -3,5 +3,5 @@ const app = require('express')();
 app.get('/',(req,res)=>{
     res.json({success:true}).end()
 })
-
-app.listen(3000);
+const port = process.env.PORT||3000;
+app.listen(port);
